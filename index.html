@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | TransactEase</title>
-    <link rel="icon" href="./resources/assets/Group.png">
+    <title>Home | DevBoard</title>
+    <link rel="icon" href="./resources/assets/logo.png">
 
     <!-- FontAwesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Google Font CDN -->
-<!-- Poppins -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bebas+Neue&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Font CDN -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bebas+Neue&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-<!-- daisyUI CDN -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Tailwind Script CDN -->
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
+    <!-- Tailwind Script CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  }
-</script>
+    </script>
 
-<!-- Stylesheet -->
-<style>
-    .font-poppins {
-      font-family: "Poppins", serif;
-    }
-  </style>
+    <!-- Stylesheet -->
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+    </style>
 </head>
-<body class="font-poppins">
-    <!-- Header -->
-    <header>
 
+<body class="font-poppins bg-[#F4F7FF] lg:px-[6.25rem]">
+    <!-- Header -->
+    <header class="px-[0.75rem] py-[0.75rem] lg:py-5">
+        <!-- Navbar -->
+        <nav class="">
+            <div class="navbar bg-base-100 rounded-lg p-4">
+                <div class="flex-1 gap-3">
+                    <img class="hover:cursor-pointer" src="./resources/assets/logo.png" alt="logo">
+                    <a class="text-xl hidden md:block">Dev<span class=" font-bold">Board</span></a>
+                </div>
+                
+                <div class="flex gap-5">
+                    <div>
+                        <a class="btn bg-[#F4F7FF]">
+                            <svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7_127)">
+                            <path d="M25.3333 0H6.66669C2.98662 0.0044375 0.0044375 2.98662 0 6.66669V25.3334C0.0044375 29.0134 2.98662 31.9956 6.66669 32H25.3334C29.0134 31.9956 31.9956 29.0134 32 25.3333V6.66669C31.9956 2.98662 29.0134 0.0044375 25.3333 0ZM26.6667 10.772L14.328 23.1107C13.2868 24.1523 11.5984 24.1526 10.5568 23.1114C10.5565 23.1112 10.5562 23.1109 10.556 23.1107L5.33331 17.8894C4.81156 17.3676 4.81156 16.5218 5.33331 16.0001C5.85506 15.4784 6.70094 15.4783 7.22262 16.0001L12.4439 21.2214L24.7839 8.88269C25.3057 8.36281 26.1501 8.36431 26.6699 8.886C27.1899 9.40775 27.1884 10.2521 26.6667 10.772Z" fill="#3752FD"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7_127">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+
+                            <h1 class="text-2xl">23</h1>
+                            </a>
+                    </div>
+
+                    <div class="">
+                        <a class="">
+                            <img class="bg-[#F4F7FF] rounded-full p-2 btn" src="./resources/assets/theme-btn.png" alt="theme-btn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Main -->
     <main>
-
+        
     </main>
 </body>
+
 </html>
