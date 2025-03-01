@@ -50,10 +50,10 @@
     <header class="">
         <!-- Navbar -->
         <nav class="">
-            <div class="navbar bg-base-100 rounded-xl p-4">
+            <div class="p-4 navbar bg-base-100 rounded-xl">
                 <div class="flex-1 gap-3">
                     <img class="hover:cursor-pointer" src="./resources/assets/logo.png" alt="logo">
-                    <a class="text-xl hidden md:block">Dev<span class=" font-bold">Board</span></a>
+                    <a class="hidden text-xl md:block">Dev<span class="font-bold">Board</span></a>
                 </div>
 
                 <div class="flex gap-5">
@@ -73,12 +73,12 @@
                                 </defs>
                             </svg>
 
-                            <h1 class="text-2xl">23</h1>
+                            <h1 id="completed-task" class="text-2xl">23</h1>
                         </a>
                     </div>
 
                     <div class="">
-                        <a class="">
+                        <a id="theme-btn" class="">
                             <img class="bg-[#F4F7FF] rounded-full p-2 btn" src="./resources/assets/theme-btn.png"
                                 alt="theme-btn">
                         </a>
@@ -89,33 +89,35 @@
     </header>
 
     <!-- Main -->
-    <main class="flex flex-col lg:grid lg:grid-cols-5 gap-3">
+    <main class="flex flex-col gap-3 lg:grid lg:grid-cols-5">
         <!-- Left Container -->
         <section class="px-[0.75rem] py-[0.75rem] mt-5 bg-base-100 col-span-4 rounded-xl items-center">
             <!-- Left Container Top -->
-            <div class="mb-5 flex flex-col md:grid md:grid-cols-8 gap-3 border-b-2 border-dotted border-gray-300 pb-5">
+            <div class="flex flex-col gap-3 pb-5 mb-5 border-b-2 border-gray-300 border-dotted md:grid md:grid-cols-8">
                 <div class="bg-base-100 col-span-2 flex justify-center items-center p-5 bg-[#F4F7FF] gap-3 rounded-xl">
-                    <img class="p-2 bg-base-100 rounded-full" src="./resources/assets/checkbox.png" alt="checkbox">
-                    <h1 class="text-[0.75rem]">Task Assigned <br> <span class="text-[1.25rem] font-bold">06</span></h1>
+                    <img class="p-2 rounded-full bg-base-100" src="./resources/assets/checkbox.png" alt="checkbox">
+                    <h1 class="text-[0.75rem]">Task Assigned <br> <span id="remaining-task" class="text-[1.25rem] font-bold">06</span></h1>
                 </div>
 
                 <div
                     class="col-span-4 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex items-center gap-3 justify-center p-5 rounded-xl hover:cursor-pointer hover:shadow-lg">
                     <img src="./resources/assets/board.png" alt="board">
-                    <h1 class="font-medium text-white text-justify">Discover Something New Today!</h1>
+                    <h1 class="font-medium text-justify text-white">Discover Something New Today!</h1>
                 </div>
 
                 <div class="bg-base-100 col-span-2 flex items-center p-5 bg-[#F4F7FF] gap-3 rounded-xl justify-center">
-                    <img class="p-2 bg-base-100 rounded-full" src="./resources/assets/calender.png" alt="calender">
-                    <h1 class="text-[0.75rem]">Wednesday <br> <span class="text-[1.25rem] font-bold">Jul 28, 2025</span>
+                    <img class="p-2 rounded-full bg-base-100" src="./resources/assets/calender.png" alt="calender">
+                    <h1 class="text-[0.75rem]">
+                        <span id="weekly-day"></span> <br>
+                        <span id="full-date" class="text-[1.25rem] font-bold"></span>
                     </h1>
                 </div>
             </div>
 
             <!-- Left Container Bottom -->
-            <div class="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="grid gap-3 mt-5 md:grid-cols-2 lg:grid-cols-3">
                 <div class="bg-[#F4F7FF] p-5 rounded-xl">
-                    <div class="space-y-3 border-b-2 border-dotted border-gray-300 pb-3">
+                    <div class="pb-3 space-y-3 border-b-2 border-gray-300 border-dotted">
                         <a class="btn bg-base-100">ShopEase</a>
                         <h1 class="font-medium text-[1.5rem]">Fix Mobile Button Issue</h1>
                         <p class="bg-white text-[1rem] text-gray-500 rounded-xl p-3 text-justify">Debug using Chrome
@@ -123,7 +125,7 @@
                             and ensure onClick works properly.</p>
                     </div>
 
-                    <div class="flex items-center justify-between py-3">
+                    <div class="flex items-center justify-between pt-3">
                         <div>
                             <h1 class="text-[0.75rem]">Deadline<br><span class="font-bold text-[1rem]">02 March,
                                     2025</span></h1>
@@ -133,7 +135,7 @@
                 </div>
 
                 <div class="bg-[#F4F7FF] p-5 rounded-xl">
-                    <div class="space-y-3 border-b-2 border-dotted border-gray-300 pb-3">
+                    <div class="pb-3 space-y-3 border-b-2 border-gray-300 border-dotted">
                         <a class="btn bg-base-100">CloudSync</a>
                         <h1 class="font-medium text-[1.5rem]">Add Dark Mode</h1>
                         <p class="bg-white text-[1rem] text-gray-500 rounded-xl p-3 text-justify">Debug using Chrome
@@ -141,7 +143,7 @@
                             and ensure onClick works properly</p>
                     </div>
 
-                    <div class="flex items-center justify-between py-3">
+                    <div class="flex items-center justify-between pt-3">
                         <div>
                             <h1 class="text-[0.75rem]">Deadline<br><span class="font-bold text-[1rem]">02 March,
                                     2025</span></h1>
@@ -151,7 +153,7 @@
                 </div>
 
                 <div class="bg-[#F4F7FF] p-5 rounded-xl">
-                    <div class="space-y-3 border-b-2 border-dotted border-gray-300 pb-3">
+                    <div class="pb-3 space-y-3 border-b-2 border-gray-300 border-dotted">
                         <a class="btn bg-base-100">SwiftPay</a>
                         <h1 class="font-medium text-[1.5rem]">Optimize Home page </h1>
                         <p class="bg-white text-[1rem] text-gray-500 rounded-xl p-3 text-justify">Debug using Chrome
@@ -159,7 +161,7 @@
                             and ensure onClick works properly.</p>
                     </div>
 
-                    <div class="flex items-center justify-between py-3">
+                    <div class="flex items-center justify-between pt-3">
                         <div>
                             <h1 class="text-[0.75rem]">Deadline<br><span class="font-bold text-[1rem]">02 March,
                                     2025</span></h1>
@@ -169,7 +171,7 @@
                 </div>
 
                 <div class="bg-[#F4F7FF] p-5 rounded-xl">
-                    <div class="space-y-3 border-b-2 border-dotted border-gray-300 pb-3">
+                    <div class="pb-3 space-y-3 border-b-2 border-gray-300 border-dotted">
                         <a class="btn bg-base-100">Meta</a>
                         <h1 class="font-medium text-[1.5rem]">Add new emoji 🤲</h1>
                         <p class="bg-white text-[1rem] text-gray-500 rounded-xl p-3 text-justify">Debug using Chrome
@@ -177,7 +179,7 @@
                             and ensure onClick works properly.</p>
                     </div>
 
-                    <div class="flex items-center justify-between py-3">
+                    <div class="flex items-center justify-between pt-3">
                         <div>
                             <h1 class="text-[0.75rem]">Deadline<br><span class="font-bold text-[1rem]">02 March,
                                     2025</span></h1>
@@ -187,7 +189,7 @@
                 </div>
 
                 <div class="bg-[#F4F7FF] p-5 rounded-xl">
-                    <div class="space-y-3 border-b-2 border-dotted border-gray-300 pb-3">
+                    <div class="pb-3 space-y-3 border-b-2 border-gray-300 border-dotted">
                         <a class="btn bg-base-100">Google LLC</a>
                         <h1 class="font-medium text-[1.5rem]">Integrate OpenAI API </h1>
                         <p class="bg-white text-[1rem] text-gray-500 rounded-xl p-3 text-justify">Debug using Chrome
@@ -195,7 +197,7 @@
                             and ensure onClick works properly.</p>
                     </div>
 
-                    <div class="flex items-center justify-between py-3">
+                    <div class="flex items-center justify-between pt-3">
                         <div>
                             <h1 class="text-[0.75rem]">Deadline<br><span class="font-bold text-[1rem]">02 March,
                                     2025</span></h1>
@@ -205,7 +207,7 @@
                 </div>
 
                 <div class="bg-[#F4F7FF] p-5 rounded-xl">
-                    <div class="space-y-3 border-b-2 border-dotted border-gray-300 pb-3">
+                    <div class="pb-3 space-y-3 border-b-2 border-gray-300 border-dotted">
                         <a class="btn bg-base-100">Glassdoar</a>
                         <h1 class="font-medium text-[1.5rem]">Improve Job searching </h1>
                         <p class="bg-white text-[1rem] text-gray-500 rounded-xl p-3 text-justify">Debug using Chrome
@@ -213,7 +215,7 @@
                             and ensure onClick works properly.</p>
                     </div>
 
-                    <div class="flex items-center justify-between py-3">
+                    <div class="flex items-center justify-between pt-3">
                         <div>
                             <h1 class="text-[0.75rem]">Deadline<br><span class="font-bold text-[1rem]">02 March,
                                     2025</span></h1>
@@ -225,9 +227,9 @@
         </section>
 
         <!-- Right Container -->
-        <section class="bg-base-100 col-span-1 lg:mt-5 py-5 rounded-xl">
-            <div class="flex justify-center items-center flex-col gap-5 border-b-2 border-dotted border-gray-300 pb-5">
-                <div class="flex justify-center items-center gap-3">
+        <section class="col-span-1 py-5 bg-base-100 lg:mt-5 rounded-xl">
+            <div class="flex flex-col items-center justify-center gap-5 pb-5 border-b-2 border-gray-300 border-dotted">
+                <div class="flex items-center justify-center gap-3">
                     <img src="./resources/assets/activity.png" alt="activity">
                     <h1 class="font-semibold">Activity Log</h1>
                 </div>
@@ -247,6 +249,8 @@
             </div>
         </section>
     </main>
+
+    <script src="./scripts/updateDateTime.js"></script>
 </body>
 
 </html>
