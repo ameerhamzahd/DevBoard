@@ -58,14 +58,80 @@
 
                 <div class="navbar-end">
                     <a class="btn text-white btn-primary">Back to Desk</a>
-                  </div>
+                </div>
             </div>
         </nav>
     </header>
 
     <!-- Main -->
-    <main class="">
-        
+    <main class="flex flex-col justify-center items-center">
+        <h1 class="font-bold text-[1.5rem] pt-[0.75rem] lg:pt-5">Blogs</h1>
+
+        <div class="bg-white w-full rounded-xl mt-[0.75rem] lg:mt-5">
+            <!-- Question -->
+            <h1 class="text-[1rem] font-bold p-3 text-justify border-b-2 border-dotted border-gray-300">Question-1: What
+                are the different ways to select an element in the DOM?</h1>
+
+            <!-- Answer -->
+            <p class="text-[0.75rem] md:text-[1rem] text-gray-500 p-3 text-justify">
+                1. document.getElementByTagName()
+                <br>
+                2. document.getElementById()
+                <br>
+                3.document.getElementByClassName()
+                <br>
+                4. document.querySelector()
+                <br>
+                5. document.querySelectorAll()
+            </p>
+        </div>
+
+        <div class="bg-white w-full rounded-xl mt-[0.75rem] lg:mt-5">
+            <!-- Question -->
+            <h1 class="text-[1rem] font-bold p-3 text-justify border-b-2 border-dotted border-gray-300">Question-2: What
+                is the difference between innerHTML, innerText, and textContent ?</h1>
+
+            <!-- Answer -->
+            <p class="text-[0.75rem] md:text-[1rem] text-gray-500 p-3 text-justify">
+                innerHTML includes HTML, innerText gets visible text, and textContent gets all text without HTML.
+            </p>
+        </div>
+
+        <div class="bg-white w-full rounded-xl mt-[0.75rem] lg:mt-5">
+            <!-- Question -->
+            <h1 class="text-[1rem] font-bold p-3 text-justify border-b-2 border-dotted border-gray-300">Question-3: What
+                is event delegation in the DOM?</h1>
+
+            <!-- Answer -->
+            <p class="text-[0.75rem] md:text-[1rem] text-gray-500 p-3 text-justify">
+                Event delegation is a technique where a parent element handles events for its child elements using event
+                bubbling.
+            </p>
+        </div>
+
+        <div class="bg-white w-full rounded-xl mt-[0.75rem] lg:mt-5">
+            <!-- Question -->
+            <h1 class="text-[1rem] font-bold p-3 text-justify border-b-2 border-dotted border-gray-300">Question-4: What
+                is event bubbling in the DOM?</h1>
+
+            <!-- Answer -->
+            <p class="text-[0.75rem] md:text-[1rem] text-gray-500 p-3 text-justify">
+                Event bubbling is the process where an event starts from the target element and propagates up to its
+                parent elements in the DOM.
+            </p>
+        </div>
+
+        <div class="bg-white w-full rounded-xl mt-[0.75rem] lg:mt-5">
+            <!-- Question -->
+            <h1 class="text-[1rem] font-bold p-3 text-justify border-b-2 border-dotted border-gray-300">Question-5: How
+                do you create, add, and remove elements using JavaScript?</h1>
+
+            <!-- Answer -->
+            <p class="text-[0.75rem] md:text-[1rem] text-gray-500 p-3 text-justify">
+                document.createElement() to create, appendChild() or append() to add, and removeChild() or remove()
+                to remove elements in JavaScript.
+            </p>
+        </div>
     </main>
 </body>
 
