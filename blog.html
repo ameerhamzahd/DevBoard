@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | DevBoard</title>
+    <title>Blog | DevBoard</title>
     <link rel="icon" href="./resources/assets/logo.png">
 
     <!-- FontAwesome CDN -->
@@ -50,21 +50,21 @@
     <header class="">
         <!-- Navbar -->
         <nav class="">
-            <div class="navbar bg-base-100 rounded-xl p-4">
+            <div class="p-4 navbar bg-base-100 rounded-xl">
                 <div class="flex-1 gap-3">
                     <img class="hover:cursor-pointer" src="./resources/assets/logo.png" alt="logo">
-                    <a class="text-xl hidden md:block">Dev<span class=" font-bold">Board</span></a>
+                    <a class="hidden text-xl md:block">Dev<span class="font-bold ">Board</span></a>
                 </div>
 
                 <div class="navbar-end">
-                    <a class="btn text-white btn-primary">Back to Desk</a>
+                    <a id="back-to-desk-btn" class="text-white btn btn-primary">Back to Desk</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Main -->
-    <main class="flex flex-col justify-center items-center">
+    <main class="flex flex-col items-center justify-center">
         <h1 class="font-bold text-[1.5rem] pt-[0.75rem] lg:pt-5">Blogs</h1>
 
         <div class="bg-white w-full rounded-xl mt-[0.75rem] lg:mt-5">
@@ -133,6 +133,8 @@
             </p>
         </div>
     </main>
+
+    <script src="./scripts/blog.js"></script>
 </body>
 
 </html>
