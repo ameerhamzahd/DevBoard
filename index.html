@@ -45,7 +45,7 @@
     </style>
 </head>
 
-<body class="font-poppins bg-[#F4F7FF] px-[0.75rem] py-[0.75rem] lg:px-[6.25rem] lg:py-5">
+<body id="body" class="font-poppins bg-[#F4F7FF] px-[0.75rem] py-[0.75rem] lg:px-[6.25rem] lg:py-5">
     <!-- Header -->
     <header class="">
         <!-- Navbar -->
@@ -99,7 +99,7 @@
                     <h1 class="text-[0.75rem]">Task Assigned <br> <span id="remaining-task" class="text-[1.25rem] font-bold">06</span></h1>
                 </div>
 
-                <div
+                <div id="discover-btn"
                     class="col-span-4 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex items-center gap-3 justify-center p-5 rounded-xl hover:cursor-pointer hover:shadow-lg">
                     <img src="./resources/assets/board.png" alt="board">
                     <h1 class="font-medium text-justify text-white">Discover Something New Today!</h1>
@@ -250,7 +250,9 @@
         </section>
     </main>
 
+    <script src="./scripts/discover.js"></script>
     <script src="./scripts/updateDateTime.js"></script>
+    <script src="./scripts/updateTheme.js"></script>
 </body>
 
 </html>
